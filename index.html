@@ -79,7 +79,7 @@
 </head>
 <body>
 <h1>AtCoder 延長戦GP30ランキング</h1>
-<div id="last-update">最終更新日時: 2024-07-15 12:53:17</div>
+<div id="last-update">最終更新日時: 2024-07-15 16:21:45</div>
 <div class="table-container">
 <table id="rankingTable">
 <thead>
@@ -126,12 +126,25 @@
 
             const sortedUsers = Object.entries(userPoints)
                 .sort((a, b) => b[1].totalPoints - a[1].totalPoints)
-                .map(([username, data], index) => ({
-                    rank: index + 1,
-                    username,
-                    totalPoints: data.totalPoints,
-                    contestPoints: data.contestPoints
-                }));
+                .reduce((acc, [username, data], index, array) => {
+                    const prevUser = acc[acc.length - 1];
+                    let rank;
+                    if (prevUser && prevUser.totalPoints === data.totalPoints) {
+                        // 前のユーザーと同点の場合、同じランクを割り当てる
+                        rank = prevUser.rank;
+                    } else {
+                        // そうでない場合、現在のインデックス + 1 をランクとする
+                        rank = index + 1;
+                    }
+                    
+                    acc.push({
+                        rank,
+                        username,
+                        totalPoints: data.totalPoints,
+                        contestPoints: data.contestPoints
+                    });
+                    return acc;
+                }, []);
 
             return { rankings: sortedUsers, contests };
         }
