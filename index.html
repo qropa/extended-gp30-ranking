@@ -152,8 +152,17 @@
         function displayRankings(rankings, contests) {
             const headerRow = document.getElementById('headerRow');
             contests.forEach(contest => {
-                const th = document.createElement('th');
+                /*const th = document.createElement('th');
                 th.textContent = contest;
+                headerRow.appendChild(th);
+                */
+                const th = document.createElement('th');
+                const link = document.createElement('a');
+                link.href = `https://atcoder.jp/contests/${contest}/standings/extended`;
+                link.textContent = contest;
+                link.target = "_blank"; // 新しいタブでリンクを開く
+                th.appendChild(link);
+                th.classList.add('fixed-header');
                 headerRow.appendChild(th);
             });
 
