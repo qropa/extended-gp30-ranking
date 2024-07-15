@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AtCoder Extended GP30 Ranking</title>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        .table-container {
+            position: relative;
+            max-height:85vh;
+            overflow: auto;
+        }
+        table {
+            border-collapse: separate;
+            border-spacing: 0;
+            width: 100%;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+            min-width: 100px;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        thead {
+            position: sticky;
+            top: 0;
+            z-index: 2;
+            background-color: #f2f2f2;
+        }
+        .fixed-column {
+            position: sticky;
+            background-color: #fff;
+            z-index: 1;
+        }
+        thead .fixed-column {
+            z-index: 3;
+        }
+        .rank-column {
+            left: 0;
+            min-width: 60px;
+        }
+        .username-column {
+            left: 61px;
+            min-width: 150px;
+        }
+        .total-points-column {
+            left: 212px;
+            min-width: 100px;
+        }
+        h1 {
+            text-align: center;
+        }
+        /* 偶数行の背景色 */
+        tbody tr:nth-child(even) {
+            background-color: #e2dbdb;
+        }
+        /* 奇数行の背景色 */
+        tbody tr:nth-child(odd) {
+            background-color: #ffffff;
+        }
+        /* 固定列の背景色を行の色に合わせる */
+        tbody tr:nth-child(even) .fixed-column {
+            background-color: #e2dbdb;
+        }
+        tbody tr:nth-child(odd) .fixed-column {
+            background-color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <h1>AtCoder 延長戦GP30ランキング</h1>
+    <div class="table-container">
+        <table id="rankingTable">
+            <thead>
+                <tr>
+                    <th class="fixed-column rank-column">順位</th>
+                    <th class="fixed-column username-column">ユーザー名</th>
+                    <th class="fixed-column total-points-column">総ポイント</th>
+                    <th colspan="100">コンテスト別ポイント</th>
+                </tr>
+                <tr id="headerRow">
+                    <th class="fixed-column rank-column"></th>
+                    <th class="fixed-column username-column"></th>
+                    <th class="fixed-column total-points-column"></th>
+                    <!-- コンテスト列はJavaScriptで動的に追加されます -->
+                </tr>
+            </thead>
+            <tbody id="rankingBody"></tbody>
+        </table>
+    </div>
+
+    <script>
+        const POINTS = [100,75,60,50,45,40,36,32,29,26,24,22,20,18,16,15,14,13,12,11,10,9,8,7,6,5,4,3,2,1];
+
+        function calculateRankings(data) {
+            const userPoints = {};
+            const contests = Object.keys(data);
+
+            contests.forEach(contest => {
+                if (data[contest].ranking && Array.isArray(data[contest].ranking)) {
+                    data[contest].ranking.forEach((user, index) => {
+                        if (user && user.username) {
+                            const points = index < POINTS.length ? POINTS[index] : 0;
+                            if (!userPoints[user.username]) {
+                                userPoints[user.username] = {
+                                    totalPoints: 0,
+                                    contestPoints: {}
+                                };
+                            }
+                            userPoints[user.username].totalPoints += points;
+                            userPoints[user.username].contestPoints[contest] = points;
+                        }
+                    });
+                }
+            });
+
+            const sortedUsers = Object.entries(userPoints)
+                .sort((a, b) => b[1].totalPoints - a[1].totalPoints)
+                .map(([username, data], index) => ({
+                    rank: index + 1,
+                    username,
+                    totalPoints: data.totalPoints,
+                    contestPoints: data.contestPoints
+                }));
+
+            return { rankings: sortedUsers, contests };
+        }
+
+        function displayRankings(rankings, contests) {
+            const headerRow = document.getElementById('headerRow');
+            contests.forEach(contest => {
+                const th = document.createElement('th');
+                th.textContent = contest;
+                headerRow.appendChild(th);
+            });
+
+            const tbody = document.getElementById('rankingBody');
+            rankings.forEach(entry => {
+                const row = tbody.insertRow();
+                const rankCell = row.insertCell();
+                rankCell.textContent = entry.rank;
+                rankCell.classList.add('fixed-column', 'rank-column');
+                
+                const usernameCell = row.insertCell();
+                usernameCell.textContent = entry.username;
+                usernameCell.classList.add('fixed-column', 'username-column');
+                
+                const totalPointsCell = row.insertCell();
+                totalPointsCell.textContent = entry.totalPoints;
+                totalPointsCell.classList.add('fixed-column', 'total-points-column');
+
+                contests.forEach(contest => {
+                    const cell = row.insertCell();
+                    cell.textContent = entry.contestPoints[contest] || 0;
+                });
+            });
+        }
+
+        fetch('atcoder_standings.json')
+            .then(response => response.json())
+            .then(data => {
+                console.log("Loaded data:", data);
+                const { rankings, contests } = calculateRankings(data);
+                displayRankings(rankings, contests);
+            })
+            .catch(error => {
+                console.error("Error loading or processing data:", error);
+                document.body.innerHTML += "<p>データの読み込みまたは処理中にエラーが発生しました。</p>";
+            });
+    </script>
+</body>
+</html>
