@@ -75,129 +75,126 @@
         tbody tr:nth-child(odd) .fixed-column {
             background-color: #ffffff;
         }
-    </style>
+</style>
 </head>
 <body>
-<h1>AtCoder 延長戦GP30ランキング</h1>
-<div id="last-update">最終更新日時: 2024-07-15 16:21:45</div>
-<div class="table-container">
-<table id="rankingTable">
-<thead>
-<tr>
-<th class="fixed-column rank-column">順位</th>
-<th class="fixed-column username-column">ユーザー名</th>
-<th class="fixed-column total-points-column">総ポイント</th>
-<th colspan="100">コンテスト別ポイント</th>
-</tr>
-<tr id="headerRow">
-<th class="fixed-column rank-column"></th>
-<th class="fixed-column username-column"></th>
-<th class="fixed-column total-points-column"></th>
-<!-- コンテスト列はJavaScriptで動的に追加されます -->
-</tr>
-</thead>
-<tbody id="rankingBody"></tbody>
-</table>
-</div>
-<script>
-        const POINTS = [100,75,60,50,45,40,36,32,29,26,24,22,20,18,16,15,14,13,12,11,10,9,8,7,6,5,4,3,2,1];
+    <h1>AtCoder 延長戦GP30ランキング</h1>
+    <div id="last-update">最終更新日時: 2024-07-15 16:21:45</div>
+    <div class="table-container">
+        <table id="rankingTable">
+            <thead>
+                <tr>
+                    <th class="fixed-column rank-column">順位</th>
+                    <th class="fixed-column username-column">ユーザー名</th>
+                    <th class="fixed-column total-points-column">総ポイント</th>
+                </tr>
+            </thead>
+            <tbody id="rankingBody"></tbody>
+        </table>
+    </div>
+    <script>
+            const POINTS = [100,75,60,50,45,40,36,32,29,26,24,22,20,18,16,15,14,13,12,11,10,9,8,7,6,5,4,3,2,1];
 
-        function calculateRankings(data) {
-            const userPoints = {};
-            const contests = Object.keys(data);
-
-            contests.forEach(contest => {
-                if (data[contest].ranking && Array.isArray(data[contest].ranking)) {
-                    data[contest].ranking.forEach((user, index) => {
-                        if (user && user.username) {
-                            const points = index < POINTS.length ? POINTS[index] : 0;
-                            if (!userPoints[user.username]) {
-                                userPoints[user.username] = {
-                                    totalPoints: 0,
-                                    contestPoints: {}
-                                };
-                            }
-                            userPoints[user.username].totalPoints += points;
-                            userPoints[user.username].contestPoints[contest] = points;
-                        }
-                    });
-                }
-            });
-
-            const sortedUsers = Object.entries(userPoints)
-                .sort((a, b) => b[1].totalPoints - a[1].totalPoints)
-                .reduce((acc, [username, data], index, array) => {
-                    const prevUser = acc[acc.length - 1];
-                    let rank;
-                    if (prevUser && prevUser.totalPoints === data.totalPoints) {
-                        // 前のユーザーと同点の場合、同じランクを割り当てる
-                        rank = prevUser.rank;
-                    } else {
-                        // そうでない場合、現在のインデックス + 1 をランクとする
-                        rank = index + 1;
-                    }
-                    
-                    acc.push({
-                        rank,
-                        username,
-                        totalPoints: data.totalPoints,
-                        contestPoints: data.contestPoints
-                    });
-                    return acc;
-                }, []);
-
-            return { rankings: sortedUsers, contests };
-        }
-
-        function displayRankings(rankings, contests) {
-            const headerRow = document.getElementById('headerRow');
-            contests.forEach(contest => {
-                /*const th = document.createElement('th');
-                th.textContent = contest;
-                headerRow.appendChild(th);
-                */
-                const th = document.createElement('th');
-                const link = document.createElement('a');
-                link.href = `https://atcoder.jp/contests/${contest}/standings/extended`;
-                link.textContent = contest;
-                link.target = "_blank"; // 新しいタブでリンクを開く
-                th.appendChild(link);
-                th.classList.add('fixed-header');
-                headerRow.appendChild(th);
-            });
-
-            const tbody = document.getElementById('rankingBody');
-            rankings.forEach(entry => {
-                const row = tbody.insertRow();
-                const rankCell = row.insertCell();
-                rankCell.textContent = entry.rank;
-                rankCell.classList.add('fixed-column', 'rank-column');
-                
-                const usernameCell = row.insertCell();
-                usernameCell.textContent = entry.username;
-                usernameCell.classList.add('fixed-column', 'username-column');
-                
-                const totalPointsCell = row.insertCell();
-                totalPointsCell.textContent = entry.totalPoints;
-                totalPointsCell.classList.add('fixed-column', 'total-points-column');
+            function calculateRankings(data) {
+                const userPoints = {};
+                const contests = Object.keys(data);
 
                 contests.forEach(contest => {
-                    const cell = row.insertCell();
-                    cell.textContent = entry.contestPoints[contest] || 0;
+                    if (data[contest].ranking && Array.isArray(data[contest].ranking)) {
+                        data[contest].ranking.forEach((user, index) => {
+                            if (user && user.username) {
+                                const points = index < POINTS.length ? POINTS[index] : 0;
+                                if (!userPoints[user.username]) {
+                                    userPoints[user.username] = {
+                                        totalPoints: 0,
+                                        contestPoints: {}
+                                    };
+                                }
+                                userPoints[user.username].totalPoints += points;
+                                userPoints[user.username].contestPoints[contest] = points;
+                            }
+                        });
+                    }
                 });
-            });
-        }
 
-        fetch('atcoder_standings.json')
-            .then(response => response.json())
-            .then(data => {
-                const { rankings, contests } = calculateRankings(data);
-                displayRankings(rankings, contests);
-            })
-            .catch(error => {
-                console.error("Error loading or processing data:", error);
-                document.body.innerHTML += "<p>データの読み込みまたは処理中にエラーが発生しました。</p>";
-            });
-    </script>
+                const sortedUsers = Object.entries(userPoints)
+                    .sort((a, b) => b[1].totalPoints - a[1].totalPoints)
+                    .reduce((acc, [username, data], index, array) => {
+                        const prevUser = acc[acc.length - 1];
+                        let rank;
+                        if (prevUser && prevUser.totalPoints === data.totalPoints) {
+                            // 前のユーザーと同点の場合、同じランクを割り当てる
+                            rank = prevUser.rank;
+                        } else {
+                            // そうでない場合、現在のインデックス + 1 をランクとする
+                            rank = index + 1;
+                        }
+                        
+                        acc.push({
+                            rank,
+                            username,
+                            totalPoints: data.totalPoints,
+                            contestPoints: data.contestPoints
+                        });
+                        return acc;
+                    }, []);
+
+                return { rankings: sortedUsers, contests };
+            }
+
+            function displayRankings(rankings, contests) {
+                const headerRow = document.querySelector('#rankingTable thead tr');
+                
+                // コンテスト列のヘッダーを追加
+                contests.forEach(contest => {
+                    const th = document.createElement('th');
+                    const link = document.createElement('a');
+                    link.href = `https://atcoder.jp/contests/${contest}/standings/extended`;
+                    link.textContent = contest;
+                    link.target = "_blank";
+                    link.rel = "noopener noreferrer";
+                    th.appendChild(link);
+                    th.classList.add('fixed-header');
+                    headerRow.appendChild(th);
+                });
+
+                const tbody = document.getElementById('rankingBody');
+                rankings.forEach(entry => {
+                    const row = tbody.insertRow();
+                    
+                    // 順位列
+                    const rankCell = row.insertCell();
+                    rankCell.textContent = entry.rank;
+                    rankCell.classList.add('fixed-column', 'rank-column');
+                    
+                    // ユーザー名列
+                    const usernameCell = row.insertCell();
+                    usernameCell.textContent = entry.username;
+                    usernameCell.classList.add('fixed-column', 'username-column');
+                    
+                    // 総ポイント列
+                    const totalPointsCell = row.insertCell();
+                    totalPointsCell.textContent = entry.totalPoints;
+                    totalPointsCell.classList.add('fixed-column', 'total-points-column');
+
+                    // コンテストごとのポイント列
+                    contests.forEach(contest => {
+                        const cell = row.insertCell();
+                        cell.textContent = entry.contestPoints[contest] || 0;
+                    });
+                });
+            }
+
+            fetch('atcoder_standings.json')
+                .then(response => response.json())
+                .then(data => {
+                    const { rankings, contests } = calculateRankings(data);
+                    displayRankings(rankings, contests);
+                })
+                .catch(error => {
+                    console.error("Error loading or processing data:", error);
+                    document.body.innerHTML += "<p>データの読み込みまたは処理中にエラーが発生しました。</p>";
+                });
+        </script>
 </body>
 </html>
