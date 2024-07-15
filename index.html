@@ -182,7 +182,6 @@
         fetch('atcoder_standings.json')
             .then(response => response.json())
             .then(data => {
-                console.log("Loaded data:", data);
                 const { rankings, contests } = calculateRankings(data);
                 displayRankings(rankings, contests);
             })
