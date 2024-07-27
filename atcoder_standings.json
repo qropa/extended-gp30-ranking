@@ -2004,11 +2004,11 @@
         "ranking": [
             {
                 "rank": 1,
-                "username": "imazato"
+                "username": "NOI_AK_ME"
             },
             {
                 "rank": 2,
-                "username": "NOI_AK_ME"
+                "username": "imazato"
             },
             {
                 "rank": 3,
@@ -2391,11 +2391,11 @@
             },
             {
                 "rank": 4,
-                "username": "jugnuc"
+                "username": "eijirou"
             },
             {
                 "rank": 5,
-                "username": "eijirou"
+                "username": "jugnuc"
             },
             {
                 "rank": 6,
@@ -3487,7 +3487,7 @@
             },
             {
                 "rank": 28,
-                "username": "luogu_bot4"
+                "username": "pengyutaozaolong"
             },
             {
                 "rank": 29,
@@ -3834,15 +3834,15 @@
             },
             {
                 "rank": 21,
-                "username": "tsukammo"
+                "username": "uta_ccc"
             },
             {
                 "rank": 22,
-                "username": "USA"
+                "username": "tsukammo"
             },
             {
                 "rank": 23,
-                "username": "uta_ccc"
+                "username": "USA"
             },
             {
                 "rank": 24,
@@ -3862,15 +3862,15 @@
             },
             {
                 "rank": 28,
-                "username": "Jinapetto"
+                "username": "starpentagon"
             },
             {
                 "rank": 29,
-                "username": "scat_neko"
+                "username": "Jinapetto"
             },
             {
                 "rank": 30,
-                "username": "sugarrr"
+                "username": "scat_neko"
             }
         ]
     },
@@ -4681,15 +4681,15 @@
             },
             {
                 "rank": 14,
-                "username": "Sojiro"
-            },
-            {
-                "rank": 15,
                 "username": "Moegi"
             },
             {
-                "rank": 16,
+                "rank": 15,
                 "username": "Kiri8128"
+            },
+            {
+                "rank": 16,
+                "username": "Sojiro"
             },
             {
                 "rank": 17,
