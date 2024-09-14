@@ -1455,11 +1455,11 @@
             },
             {
                 "rank": 20,
-                "username": "Wyx123456"
+                "username": "saharan"
             },
             {
                 "rank": 21,
-                "username": "saharan"
+                "username": "Wyx123456"
             },
             {
                 "rank": 22,
@@ -1629,11 +1629,11 @@
         "ranking": [
             {
                 "rank": 1,
-                "username": "matum"
+                "username": "Psyho"
             },
             {
                 "rank": 2,
-                "username": "Psyho"
+                "username": "matum"
             },
             {
                 "rank": 3,
@@ -3487,15 +3487,15 @@
             },
             {
                 "rank": 28,
-                "username": "luogu_bot4"
-            },
-            {
-                "rank": 29,
                 "username": "learnerofyzy"
             },
             {
+                "rank": 29,
+                "username": "luogu_bot2"
+            },
+            {
                 "rank": 30,
-                "username": "ewrewr"
+                "username": "luogu_bot4"
             }
         ]
     },
@@ -3790,11 +3790,11 @@
             },
             {
                 "rank": 10,
-                "username": "peroon"
+                "username": "wangdiwei30"
             },
             {
                 "rank": 11,
-                "username": "wangdiwei30"
+                "username": "peroon"
             },
             {
                 "rank": 12,
@@ -3818,23 +3818,23 @@
             },
             {
                 "rank": 17,
-                "username": "Kevin911"
-            },
-            {
-                "rank": 18,
-                "username": "christopher20"
-            },
-            {
-                "rank": 19,
-                "username": "hoanglong"
-            },
-            {
-                "rank": 20,
                 "username": "link526267"
             },
             {
-                "rank": 21,
+                "rank": 18,
+                "username": "hoanglong"
+            },
+            {
+                "rank": 19,
+                "username": "christopher20"
+            },
+            {
+                "rank": 20,
                 "username": "Axton"
+            },
+            {
+                "rank": 21,
+                "username": "Kevin911"
             },
             {
                 "rank": 22,
@@ -4806,15 +4806,15 @@
             },
             {
                 "rank": 14,
-                "username": "Kiri8128"
-            },
-            {
-                "rank": 15,
                 "username": "Moegi"
             },
             {
-                "rank": 16,
+                "rank": 15,
                 "username": "Sojiro"
+            },
+            {
+                "rank": 16,
+                "username": "Kiri8128"
             },
             {
                 "rank": 17,
