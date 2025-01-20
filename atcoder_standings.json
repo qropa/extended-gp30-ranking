@@ -1629,15 +1629,15 @@
         "ranking": [
             {
                 "rank": 1,
-                "username": "matum"
-            },
-            {
-                "rank": 2,
                 "username": "Wayne2"
             },
             {
-                "rank": 3,
+                "rank": 2,
                 "username": "Psyho"
+            },
+            {
+                "rank": 3,
+                "username": "matum"
             },
             {
                 "rank": 4,
@@ -2060,11 +2060,11 @@
             },
             {
                 "rank": 15,
-                "username": "gsc0618china"
+                "username": "zhangluohan"
             },
             {
                 "rank": 16,
-                "username": "zhangluohan"
+                "username": "gsc0618china"
             },
             {
                 "rank": 17,
@@ -3495,7 +3495,7 @@
             },
             {
                 "rank": 30,
-                "username": "pengyutaozaolong"
+                "username": "luogu_bot2"
             }
         ]
     },
@@ -3826,7 +3826,7 @@
             },
             {
                 "rank": 19,
-                "username": "link526267"
+                "username": "hoanglong"
             },
             {
                 "rank": 20,
@@ -3834,19 +3834,19 @@
             },
             {
                 "rank": 21,
-                "username": "hoanglong"
-            },
-            {
-                "rank": 22,
                 "username": "Axton"
             },
             {
+                "rank": 22,
+                "username": "link526267"
+            },
+            {
                 "rank": 23,
-                "username": "cjywlmc"
+                "username": "cjywl"
             },
             {
                 "rank": 24,
-                "username": "cjywl"
+                "username": "cjywlmc"
             },
             {
                 "rank": 25,
@@ -5310,11 +5310,11 @@
             },
             {
                 "rank": 15,
-                "username": "Sojiro"
+                "username": "Kiri8128"
             },
             {
                 "rank": 16,
-                "username": "Kiri8128"
+                "username": "Sojiro"
             },
             {
                 "rank": 17,
