@@ -1629,15 +1629,15 @@
         "ranking": [
             {
                 "rank": 1,
-                "username": "Wayne2"
-            },
-            {
-                "rank": 2,
                 "username": "Psyho"
             },
             {
-                "rank": 3,
+                "rank": 2,
                 "username": "matum"
+            },
+            {
+                "rank": 3,
+                "username": "Wayne2"
             },
             {
                 "rank": 4,
@@ -3794,11 +3794,11 @@
             },
             {
                 "rank": 11,
-                "username": "wangdiwei30"
+                "username": "peroon"
             },
             {
                 "rank": 12,
-                "username": "peroon"
+                "username": "wangdiwei30"
             },
             {
                 "rank": 13,
@@ -3826,19 +3826,19 @@
             },
             {
                 "rank": 19,
-                "username": "link526267"
-            },
-            {
-                "rank": 20,
-                "username": "christopher20"
-            },
-            {
-                "rank": 21,
                 "username": "Kevin911"
             },
             {
-                "rank": 22,
+                "rank": 20,
                 "username": "Axton"
+            },
+            {
+                "rank": 21,
+                "username": "link526267"
+            },
+            {
+                "rank": 22,
+                "username": "christopher20"
             },
             {
                 "rank": 23,
