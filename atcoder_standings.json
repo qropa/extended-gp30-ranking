@@ -1629,15 +1629,15 @@
         "ranking": [
             {
                 "rank": 1,
-                "username": "Wayne2"
-            },
-            {
-                "rank": 2,
                 "username": "matum"
             },
             {
-                "rank": 3,
+                "rank": 2,
                 "username": "Psyho"
+            },
+            {
+                "rank": 3,
+                "username": "Wayne2"
             },
             {
                 "rank": 4,
@@ -2004,11 +2004,11 @@
         "ranking": [
             {
                 "rank": 1,
-                "username": "imazato"
+                "username": "NOI_AK_ME"
             },
             {
                 "rank": 2,
-                "username": "NOI_AK_ME"
+                "username": "imazato"
             },
             {
                 "rank": 3,
@@ -2068,11 +2068,11 @@
             },
             {
                 "rank": 17,
-                "username": "zhangluohan"
+                "username": "gsc0618china"
             },
             {
                 "rank": 18,
-                "username": "gsc0618china"
+                "username": "zhangluohan"
             },
             {
                 "rank": 19,
@@ -3479,11 +3479,11 @@
             },
             {
                 "rank": 26,
-                "username": "ra5anchor"
+                "username": "aito221"
             },
             {
                 "rank": 27,
-                "username": "aito221"
+                "username": "ra5anchor"
             },
             {
                 "rank": 28,
@@ -3495,7 +3495,7 @@
             },
             {
                 "rank": 30,
-                "username": "luogu_bot4"
+                "username": "learnerofyzy"
             }
         ]
     },
@@ -3794,11 +3794,11 @@
             },
             {
                 "rank": 11,
-                "username": "wangdiwei30"
+                "username": "peroon"
             },
             {
                 "rank": 12,
-                "username": "peroon"
+                "username": "wangdiwei30"
             },
             {
                 "rank": 13,
@@ -3822,23 +3822,23 @@
             },
             {
                 "rank": 18,
-                "username": "christopher20"
-            },
-            {
-                "rank": 19,
-                "username": "link526267"
-            },
-            {
-                "rank": 20,
-                "username": "Axton"
-            },
-            {
-                "rank": 21,
                 "username": "hoanglong"
             },
             {
-                "rank": 22,
+                "rank": 19,
+                "username": "Axton"
+            },
+            {
+                "rank": 20,
+                "username": "link526267"
+            },
+            {
+                "rank": 21,
                 "username": "Kevin911"
+            },
+            {
+                "rank": 22,
+                "username": "christopher20"
             },
             {
                 "rank": 23,
@@ -4395,11 +4395,11 @@
             },
             {
                 "rank": 5,
-                "username": "Kevin911"
+                "username": "cocoa_iris"
             },
             {
                 "rank": 6,
-                "username": "cocoa_iris"
+                "username": "Kevin911"
             },
             {
                 "rank": 7,
@@ -4697,11 +4697,11 @@
             },
             {
                 "rank": 18,
-                "username": "bin101"
+                "username": "Shibuyap"
             },
             {
                 "rank": 19,
-                "username": "Shibuyap"
+                "username": "bin101"
             },
             {
                 "rank": 20,
@@ -4729,7 +4729,7 @@
             },
             {
                 "rank": 26,
-                "username": "kwm_t"
+                "username": "merhorn"
             },
             {
                 "rank": 27,
@@ -4737,7 +4737,7 @@
             },
             {
                 "rank": 28,
-                "username": "merhorn"
+                "username": "kwm_t"
             },
             {
                 "rank": 29,
@@ -5689,11 +5689,11 @@
             },
             {
                 "rank": 16,
-                "username": "Sojiro"
+                "username": "Moegi"
             },
             {
                 "rank": 17,
-                "username": "Moegi"
+                "username": "Sojiro"
             },
             {
                 "rank": 18,
