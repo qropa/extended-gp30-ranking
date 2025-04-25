@@ -1,1 +1,3 @@
-/config.ini
+config.ini
+cookies.json
+__pycache__/

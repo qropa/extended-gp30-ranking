@@ -4,34 +4,7 @@ import sys
 import json
 import time
 import datetime
-
-def login_to_atcoder(username, password):
-    # セッションを作成
-    session = requests.Session()
-
-    # ログインページのURLを設定
-    login_url = 'https://atcoder.jp/login'
-
-    # ログインページを取得してCSRFトークンを抽出
-    response = session.get(login_url)
-    soup = BeautifulSoup(response.text, 'html.parser')
-    csrf_token = soup.find('input', {'name': 'csrf_token'})['value']
-    
-    # ログイン情報を設定
-    login_data = {
-        'username': username,
-        'password': password,
-        'csrf_token': csrf_token
-    }
-
-    # ログインリクエストを送信
-    response = session.post(login_url, data=login_data)
-    if response.url == 'https://atcoder.jp/home':  # ログイン後のリダイレクト先を確認
-        print("ログイン成功")
-        return session
-    
-    print("ログイン失敗")
-    return None
+from get_cookie import get_valid_session
 
 def extract_usernames(json_data):
     # JSONデータをPythonオブジェクトに変換
@@ -95,7 +68,8 @@ if __name__ == "__main__":
     username = config['atcoder']['username']
     password = config['atcoder']['password']
 
-    session = login_to_atcoder(username, password)
+    #session = login_to_atcoder(username, password)
+    session = get_valid_session()
     if session is None:
         print("ログインに失敗しました。スクリプトを終了します。")
         sys.exit(1)
@@ -118,7 +92,7 @@ if __name__ == "__main__":
                     "ahc030", "ahc031", "ahc032", "ahc033", 
                     "ahc034", "ahc035", "ahc036", "ahc037",
                     "ahc038", "ahc039", "ahc040", "ahc041",
-                    "ahc042", "ahc043",
+                    "ahc042", "ahc043", "ahc044", "ahc045",
                     "intro-heuristics", "future-contest-2021-qual", 
                     "future-contest-2021-final", "future-contest-2022-final", 
                     "future-contest-2023-final", "toyota-hc-2023spring", 
