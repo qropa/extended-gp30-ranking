@@ -97,7 +97,7 @@ if __name__ == "__main__":
                     "intro-heuristics", "future-contest-2021-qual", 
                     "future-contest-2021-final", "future-contest-2022-final", 
                     "future-contest-2023-final", "toyota-hc-2023spring", 
-                    "newjudge-2308-heuristic", "toyota2023summer-final"]
+                    "newjudge-2308-heuristic", "toyota2023summer-final", "awtf2025heuristic"]
     for contest in contest_list:
         usernames = get_extended_standings(session, contest)
         date = "2000-01-01"
