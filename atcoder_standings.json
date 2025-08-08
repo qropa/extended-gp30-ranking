@@ -1629,15 +1629,15 @@
         "ranking": [
             {
                 "rank": 1,
-                "username": "matum"
-            },
-            {
-                "rank": 2,
                 "username": "Psyho"
             },
             {
-                "rank": 3,
+                "rank": 2,
                 "username": "Wayne2"
+            },
+            {
+                "rank": 3,
+                "username": "matum"
             },
             {
                 "rank": 4,
@@ -2100,11 +2100,11 @@
             },
             {
                 "rank": 25,
-                "username": "zhangluohan"
+                "username": "gsc0618china"
             },
             {
                 "rank": 26,
-                "username": "gsc0618china"
+                "username": "zhangluohan"
             },
             {
                 "rank": 27,
@@ -2399,11 +2399,11 @@
             },
             {
                 "rank": 6,
-                "username": "eijirou"
+                "username": "jugnuc"
             },
             {
                 "rank": 7,
-                "username": "jugnuc"
+                "username": "eijirou"
             },
             {
                 "rank": 8,
@@ -3822,19 +3822,19 @@
             },
             {
                 "rank": 18,
-                "username": "Axton"
+                "username": "Kevin911"
             },
             {
                 "rank": 19,
-                "username": "christopher20"
-            },
-            {
-                "rank": 20,
                 "username": "hoanglong"
             },
             {
+                "rank": 20,
+                "username": "Axton"
+            },
+            {
                 "rank": 21,
-                "username": "Kevin911"
+                "username": "christopher20"
             },
             {
                 "rank": 22,
@@ -4717,11 +4717,11 @@
             },
             {
                 "rank": 23,
-                "username": "Shibuyap"
+                "username": "bin101"
             },
             {
                 "rank": 24,
-                "username": "bin101"
+                "username": "Shibuyap"
             },
             {
                 "rank": 25,
@@ -6560,7 +6560,7 @@
             },
             {
                 "rank": 15,
-                "username": "Moegi"
+                "username": "Sojiro"
             },
             {
                 "rank": 16,
@@ -6568,7 +6568,7 @@
             },
             {
                 "rank": 17,
-                "username": "Sojiro"
+                "username": "Moegi"
             },
             {
                 "rank": 18,
