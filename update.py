@@ -1,5 +1,3 @@
-import requests
-from bs4 import BeautifulSoup
 import sys
 import json
 import time
@@ -61,14 +59,7 @@ if __name__ == "__main__":
     print("スクリプトを開始します...")
     
     
-    import configparser
 
-    config = configparser.ConfigParser()
-    config.read('config.ini')
-    username = config['atcoder']['username']
-    password = config['atcoder']['password']
-
-    #session = login_to_atcoder(username, password)
     session = get_valid_session()
     if session is None:
         print("ログインに失敗しました。スクリプトを終了します。")
