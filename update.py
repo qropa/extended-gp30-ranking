@@ -1,3 +1,4 @@
+from bs4 import BeautifulSoup
 import sys
 import json
 import time
@@ -57,8 +58,6 @@ def update_last_update_time():
 # メイン処理
 if __name__ == "__main__":
     print("スクリプトを開始します...")
-    
-    
 
     session = get_valid_session()
     if session is None:

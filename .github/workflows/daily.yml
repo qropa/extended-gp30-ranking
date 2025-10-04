@@ -1,0 +1,58 @@
+name: Daily job that writes and pushes
+on:
+  schedule:
+    - cron: "0 0 * * *"   # 00:00 UTC = 09:00 JST
+  workflow_dispatch:
+
+permissions:
+  contents: write   # ← これが重要
+
+concurrency:
+  group: daily-write
+  cancel-in-progress: false
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0         # 変更差分検出やマージに備えて
+
+      - name: Set up Python (必要なら)
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      
+      - name: Install dependencies
+        run: |
+          pip install --upgrade pip
+          pip install requests bs4
+
+      - name: Restore cookies.json (必要な場合)
+        if: env.ATCODER_COOKIES_JSON != ''
+        env:
+          ATCODER_COOKIES_JSON: ${{ secrets.ATCODER_COOKIES_JSON }}
+        run: |
+          echo "$ATCODER_COOKIES_JSON" > cookies.json
+
+      - name: Run your script
+        run: |
+          chmod +x update.sh
+          ./update.sh   # ← この中で結果ファイルを更新
+
+      - name: Commit & push if changed
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          # 変更が無ければ終了
+          if git diff --quiet; then
+            echo "No changes to commit."
+            exit 0
+          fi
+
+          git add -A
+          git commit -m "chore: update results [skip ci]"
+          git push origin HEAD:master 
