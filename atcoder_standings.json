@@ -1629,11 +1629,11 @@
         "ranking": [
             {
                 "rank": 1,
-                "username": "matum"
+                "username": "Wayne2"
             },
             {
                 "rank": 2,
-                "username": "Wayne2"
+                "username": "matum"
             },
             {
                 "rank": 3,
@@ -2004,11 +2004,11 @@
         "ranking": [
             {
                 "rank": 1,
-                "username": "NOI_AK_ME"
+                "username": "imazato"
             },
             {
                 "rank": 2,
-                "username": "imazato"
+                "username": "NOI_AK_ME"
             },
             {
                 "rank": 3,
@@ -2044,11 +2044,11 @@
             },
             {
                 "rank": 11,
-                "username": "hirakuuuu"
+                "username": "M3_cp"
             },
             {
                 "rank": 12,
-                "username": "M3_cp"
+                "username": "hirakuuuu"
             },
             {
                 "rank": 13,
@@ -2104,11 +2104,11 @@
             },
             {
                 "rank": 26,
-                "username": "gsc0618china"
+                "username": "zhangluohan"
             },
             {
                 "rank": 27,
-                "username": "zhangluohan"
+                "username": "gsc0618china"
             },
             {
                 "rank": 28,
@@ -3794,11 +3794,11 @@
             },
             {
                 "rank": 11,
-                "username": "wangdiwei30"
+                "username": "peroon"
             },
             {
                 "rank": 12,
-                "username": "peroon"
+                "username": "wangdiwei30"
             },
             {
                 "rank": 13,
@@ -3822,7 +3822,7 @@
             },
             {
                 "rank": 18,
-                "username": "christopher20"
+                "username": "link526267"
             },
             {
                 "rank": 19,
@@ -3834,19 +3834,19 @@
             },
             {
                 "rank": 21,
-                "username": "Axton"
+                "username": "christopher20"
             },
             {
                 "rank": 22,
-                "username": "link526267"
+                "username": "Axton"
             },
             {
                 "rank": 23,
-                "username": "cjywl"
+                "username": "Future_Cjywl"
             },
             {
                 "rank": 24,
-                "username": "Future_Cjywl"
+                "username": "cjywl"
             },
             {
                 "rank": 25,
@@ -4399,11 +4399,11 @@
             },
             {
                 "rank": 6,
-                "username": "Kevin911"
+                "username": "cocoa_iris"
             },
             {
                 "rank": 7,
-                "username": "cocoa_iris"
+                "username": "Kevin911"
             },
             {
                 "rank": 8,
@@ -4725,11 +4725,11 @@
             },
             {
                 "rank": 25,
-                "username": "bin101"
+                "username": "Shibuyap"
             },
             {
                 "rank": 26,
-                "username": "Shibuyap"
+                "username": "bin101"
             },
             {
                 "rank": 27,
@@ -5205,11 +5205,11 @@
             },
             {
                 "rank": 20,
-                "username": "miiitomi"
+                "username": "wanui"
             },
             {
                 "rank": 21,
-                "username": "wanui"
+                "username": "miiitomi"
             },
             {
                 "rank": 22,
@@ -5568,11 +5568,11 @@
             },
             {
                 "rank": 17,
-                "username": "arfz"
+                "username": "MathGorilla"
             },
             {
                 "rank": 18,
-                "username": "MathGorilla"
+                "username": "arfz"
             },
             {
                 "rank": 19,
@@ -5891,11 +5891,11 @@
             },
             {
                 "rank": 4,
-                "username": "nikaj"
+                "username": "iceling_atcoder"
             },
             {
                 "rank": 5,
-                "username": "iceling_atcoder"
+                "username": "nikaj"
             },
             {
                 "rank": 6,
@@ -6246,6 +6246,131 @@
             {
                 "rank": 30,
                 "username": "hiro116s"
+            }
+        ]
+    },
+    "ahc055": {
+        "date": "2000-01-01",
+        "ranking": [
+            {
+                "rank": 1,
+                "username": "eijirou"
+            },
+            {
+                "rank": 2,
+                "username": "HBit"
+            },
+            {
+                "rank": 3,
+                "username": "ttmn"
+            },
+            {
+                "rank": 4,
+                "username": "bowwowforeach"
+            },
+            {
+                "rank": 5,
+                "username": "nikaj"
+            },
+            {
+                "rank": 6,
+                "username": "rcl_admin"
+            },
+            {
+                "rank": 7,
+                "username": "higumachan"
+            },
+            {
+                "rank": 8,
+                "username": "Gaeabdy"
+            },
+            {
+                "rank": 9,
+                "username": "montplusa"
+            },
+            {
+                "rank": 10,
+                "username": "Moegi"
+            },
+            {
+                "rank": 11,
+                "username": "FplusFplusF"
+            },
+            {
+                "rank": 12,
+                "username": "yosupo"
+            },
+            {
+                "rank": 13,
+                "username": "Moya_Reo"
+            },
+            {
+                "rank": 14,
+                "username": "Shun_PI"
+            },
+            {
+                "rank": 15,
+                "username": "sensaur"
+            },
+            {
+                "rank": 16,
+                "username": "kurakura"
+            },
+            {
+                "rank": 17,
+                "username": "kozima"
+            },
+            {
+                "rank": 18,
+                "username": "twins_fuyu"
+            },
+            {
+                "rank": 19,
+                "username": "fuppy0716"
+            },
+            {
+                "rank": 20,
+                "username": "Kahuka"
+            },
+            {
+                "rank": 21,
+                "username": "hiro116s"
+            },
+            {
+                "rank": 22,
+                "username": "addx"
+            },
+            {
+                "rank": 23,
+                "username": "Piiiii"
+            },
+            {
+                "rank": 24,
+                "username": "codebind_777"
+            },
+            {
+                "rank": 25,
+                "username": "physics0523"
+            },
+            {
+                "rank": 26,
+                "username": "breso"
+            },
+            {
+                "rank": 27,
+                "username": "saharan"
+            },
+            {
+                "rank": 28,
+                "username": "syukurimu"
+            },
+            {
+                "rank": 29,
+                "username": "Gear"
+            },
+            {
+                "rank": 30,
+                "username": "miiitomi"
             }
         ]
     },
@@ -7060,15 +7185,15 @@
             },
             {
                 "rank": 15,
-                "username": "Kiri8128"
+                "username": "Moegi"
             },
             {
                 "rank": 16,
-                "username": "Sojiro"
+                "username": "Kiri8128"
             },
             {
                 "rank": 17,
-                "username": "Moegi"
+                "username": "Sojiro"
             },
             {
                 "rank": 18,
