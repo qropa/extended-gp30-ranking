@@ -85,7 +85,7 @@ if __name__ == "__main__":
                     "ahc042", "ahc043", "ahc044", "ahc045",
                     "ahc046", "ahc047", "ahc048", "ahc049",
                     "ahc050", "ahc051", "ahc052", "ahc053",
-                    "ahc054", "ahc055",
+                    "ahc054", "ahc055", "ahc056",
                     "intro-heuristics", "future-contest-2021-qual", 
                     "future-contest-2021-final", "future-contest-2022-final", 
                     "future-contest-2023-final", "toyota-hc-2023spring", 
