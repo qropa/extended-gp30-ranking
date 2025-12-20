@@ -1629,15 +1629,15 @@
         "ranking": [
             {
                 "rank": 1,
-                "username": "matum"
-            },
-            {
-                "rank": 2,
                 "username": "Psyho"
             },
             {
-                "rank": 3,
+                "rank": 2,
                 "username": "Wayne2"
+            },
+            {
+                "rank": 3,
+                "username": "matum"
             },
             {
                 "rank": 4,
@@ -2004,11 +2004,11 @@
         "ranking": [
             {
                 "rank": 1,
-                "username": "NOI_AK_ME"
+                "username": "imazato"
             },
             {
                 "rank": 2,
-                "username": "imazato"
+                "username": "NOI_AK_ME"
             },
             {
                 "rank": 3,
@@ -2052,11 +2052,11 @@
             },
             {
                 "rank": 13,
-                "username": "M3_cp"
+                "username": "hirakuuuu"
             },
             {
                 "rank": 14,
-                "username": "hirakuuuu"
+                "username": "M3_cp"
             },
             {
                 "rank": 15,
@@ -2108,11 +2108,11 @@
             },
             {
                 "rank": 27,
-                "username": "gsc0618china"
+                "username": "zhangluohan"
             },
             {
                 "rank": 28,
-                "username": "zhangluohan"
+                "username": "gsc0618china"
             },
             {
                 "rank": 29,
@@ -3822,31 +3822,31 @@
             },
             {
                 "rank": 18,
-                "username": "Axton"
-            },
-            {
-                "rank": 19,
                 "username": "christopher20"
             },
             {
-                "rank": 20,
+                "rank": 19,
                 "username": "hoanglong"
             },
             {
-                "rank": 21,
+                "rank": 20,
                 "username": "Kevin911"
             },
             {
-                "rank": 22,
+                "rank": 21,
                 "username": "link526267"
             },
             {
+                "rank": 22,
+                "username": "Axton"
+            },
+            {
                 "rank": 23,
-                "username": "Future_Cjywl"
+                "username": "cjywl"
             },
             {
                 "rank": 24,
-                "username": "cjywl"
+                "username": "Future_Cjywl"
             },
             {
                 "rank": 25,
@@ -4399,11 +4399,11 @@
             },
             {
                 "rank": 6,
-                "username": "Kevin911"
+                "username": "cocoa_iris"
             },
             {
                 "rank": 7,
-                "username": "cocoa_iris"
+                "username": "Kevin911"
             },
             {
                 "rank": 8,
@@ -5891,11 +5891,11 @@
             },
             {
                 "rank": 4,
-                "username": "iceling_atcoder"
+                "username": "nikaj"
             },
             {
                 "rank": 5,
-                "username": "nikaj"
+                "username": "iceling_atcoder"
             },
             {
                 "rank": 6,
@@ -6004,11 +6004,11 @@
         "ranking": [
             {
                 "rank": 1,
-                "username": "kozima"
+                "username": "yosupo"
             },
             {
                 "rank": 2,
-                "username": "yosupo"
+                "username": "kozima"
             },
             {
                 "rank": 3,
@@ -7435,7 +7435,7 @@
             },
             {
                 "rank": 15,
-                "username": "Sojiro"
+                "username": "Kiri8128"
             },
             {
                 "rank": 16,
@@ -7443,7 +7443,7 @@
             },
             {
                 "rank": 17,
-                "username": "Kiri8128"
+                "username": "Sojiro"
             },
             {
                 "rank": 18,
