@@ -1459,11 +1459,11 @@
             },
             {
                 "rank": 21,
-                "username": "Wyx123456"
+                "username": "saharan"
             },
             {
                 "rank": 22,
-                "username": "saharan"
+                "username": "Wyx123456"
             },
             {
                 "rank": 23,
@@ -1633,15 +1633,15 @@
             },
             {
                 "rank": 2,
-                "username": "yurahuna"
-            },
-            {
-                "rank": 3,
                 "username": "matum"
             },
             {
-                "rank": 4,
+                "rank": 3,
                 "username": "Psyho"
+            },
+            {
+                "rank": 4,
+                "username": "yurahuna"
             },
             {
                 "rank": 5,
@@ -2036,11 +2036,11 @@
             },
             {
                 "rank": 9,
-                "username": "castle_"
+                "username": "eijirou"
             },
             {
                 "rank": 10,
-                "username": "eijirou"
+                "username": "castle_"
             },
             {
                 "rank": 11,
@@ -2399,11 +2399,11 @@
             },
             {
                 "rank": 6,
-                "username": "jugnuc"
+                "username": "eijirou"
             },
             {
                 "rank": 7,
-                "username": "eijirou"
+                "username": "jugnuc"
             },
             {
                 "rank": 8,
@@ -3491,11 +3491,11 @@
             },
             {
                 "rank": 29,
-                "username": "aito221"
+                "username": "ra5anchor"
             },
             {
                 "rank": 30,
-                "username": "ra5anchor"
+                "username": "aito221"
             }
         ]
     },
@@ -3826,23 +3826,23 @@
             },
             {
                 "rank": 19,
-                "username": "christopher20"
-            },
-            {
-                "rank": 20,
-                "username": "link526267"
-            },
-            {
-                "rank": 21,
                 "username": "Kevin911"
             },
             {
-                "rank": 22,
+                "rank": 20,
+                "username": "Axton"
+            },
+            {
+                "rank": 21,
                 "username": "hoanglong"
             },
             {
+                "rank": 22,
+                "username": "christopher20"
+            },
+            {
                 "rank": 23,
-                "username": "Axton"
+                "username": "link526267"
             },
             {
                 "rank": 24,
@@ -4745,7 +4745,7 @@
             },
             {
                 "rank": 30,
-                "username": "bin101"
+                "username": "Shibuyap"
             }
         ]
     },
@@ -6004,15 +6004,15 @@
         "ranking": [
             {
                 "rank": 1,
-                "username": "yosupo"
+                "username": "benben181"
             },
             {
                 "rank": 2,
-                "username": "kozima"
+                "username": "yosupo"
             },
             {
                 "rank": 3,
-                "username": "benben181"
+                "username": "kozima"
             },
             {
                 "rank": 4,
@@ -7004,11 +7004,11 @@
         "ranking": [
             {
                 "rank": 1,
-                "username": "cuthbert"
+                "username": "ly2024066"
             },
             {
                 "rank": 2,
-                "username": "ly2024066"
+                "username": "cuthbert"
             },
             {
                 "rank": 3,
@@ -7431,11 +7431,11 @@
             },
             {
                 "rank": 14,
-                "username": "glaceon1020"
+                "username": "chokudai"
             },
             {
                 "rank": 15,
-                "username": "chokudai"
+                "username": "glaceon1020"
             },
             {
                 "rank": 16,
@@ -7576,11 +7576,11 @@
             },
             {
                 "rank": 19,
-                "username": "kiduna1228"
+                "username": "th629"
             },
             {
                 "rank": 20,
-                "username": "th629"
+                "username": "kiduna1228"
             },
             {
                 "rank": 21,
@@ -7871,6 +7871,131 @@
             {
                 "rank": 30,
                 "username": "Shibuyap"
+            }
+        ]
+    },
+    "ahc068": {
+        "date": "2000-01-01",
+        "ranking": [
+            {
+                "rank": 1,
+                "username": "HBit"
+            },
+            {
+                "rank": 2,
+                "username": "Illedan"
+            },
+            {
+                "rank": 3,
+                "username": "sinzyousan"
+            },
+            {
+                "rank": 4,
+                "username": "wata_admin"
+            },
+            {
+                "rank": 5,
+                "username": "tanakh"
+            },
+            {
+                "rank": 6,
+                "username": "MasakiAOTA"
+            },
+            {
+                "rank": 7,
+                "username": "fmhr"
+            },
+            {
+                "rank": 8,
+                "username": "physics0523"
+            },
+            {
+                "rank": 9,
+                "username": "ikaringu"
+            },
+            {
+                "rank": 10,
+                "username": "PrussianBlue"
+            },
+            {
+                "rank": 11,
+                "username": "rhk"
+            },
+            {
+                "rank": 12,
+                "username": "deepini_20"
+            },
+            {
+                "rank": 13,
+                "username": "keroru"
+            },
+            {
+                "rank": 14,
+                "username": "G4NP0N"
+            },
+            {
+                "rank": 15,
+                "username": "kuhaku"
+            },
+            {
+                "rank": 16,
+                "username": "small_koala"
+            },
+            {
+                "rank": 17,
+                "username": "tsukammo"
+            },
+            {
+                "rank": 18,
+                "username": "cacampu"
+            },
+            {
+                "rank": 19,
+                "username": "Rafbill"
+            },
+            {
+                "rank": 20,
+                "username": "chokudai"
+            },
+            {
+                "rank": 21,
+                "username": "uta_ccc"
+            },
+            {
+                "rank": 22,
+                "username": "kudryavka_chan"
+            },
+            {
+                "rank": 23,
+                "username": "mtsd"
+            },
+            {
+                "rank": 24,
+                "username": "WaTeR7"
+            },
+            {
+                "rank": 25,
+                "username": "yuki4869"
+            },
+            {
+                "rank": 26,
+                "username": "montplusa"
+            },
+            {
+                "rank": 27,
+                "username": "rhoo"
+            },
+            {
+                "rank": 28,
+                "username": "noimi"
+            },
+            {
+                "rank": 29,
+                "username": "hakoshie"
+            },
+            {
+                "rank": 30,
+                "username": "naniwazu"
             }
         ]
     },
@@ -8693,11 +8818,11 @@
             },
             {
                 "rank": 17,
-                "username": "Moegi"
+                "username": "Kiri8128"
             },
             {
                 "rank": 18,
-                "username": "Kiri8128"
+                "username": "Moegi"
             },
             {
                 "rank": 19,
